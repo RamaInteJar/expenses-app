@@ -73,7 +73,7 @@ const ExpenseForm = (props) => {
           />
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 mr-0 items-end">
         <button
           className=" w-32 h-10 bg-purple-900 xl:ml-96 ml-0 rounded-xl "
           type="submit"
