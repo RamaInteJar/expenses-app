@@ -4,7 +4,9 @@ const ExpenseItem = (props) => {
   
   return (
     <div className="flex flex-wrap items-center lg:justify-between bg-gray-700 w-full rounded-xl  mt-14 p-2">
-      <div>{props.date.toISOString()}</div>
+      <div>
+        <div>{}</div>
+      </div>
       <h2 className="text-white font-bold lg:text-3xl text-xl  ml-4">
         {props.title}
       </h2>
