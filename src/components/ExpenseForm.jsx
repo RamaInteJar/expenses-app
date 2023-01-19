@@ -73,12 +73,16 @@ const ExpenseForm = (props) => {
           />
         </div>
       </div>
-      <div className="mt-4 mr-0 items-end">
-        <button
-          className=" w-32 h-10 bg-purple-900 xl:ml-96 ml-0 rounded-xl "
-          type="submit"
-        >
+      <div className="mt-4 mr-0 items-end inline-flex">
+        <button className=" w-32 h-10 bg-purple-900  rounded-xl " type="submit">
           Add Expense
+        </button>
+        <button
+          type="button"
+          onClick={props.onCancel}
+          className=" w-32 h-10 bg-purple-900 xl:ml-96 mr-10 rounded-xl "
+        >
+          Cancel
         </button>
       </div>
     </form>

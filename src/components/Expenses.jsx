@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ExpenseItem from "./ExpenseItem";
 import Card from "./Card";
 import ExpenseFilter from "./ExpenseFilter";
+import ExpensesList from "./ExpensesList";
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
@@ -15,25 +15,15 @@ const Expenses = (props) => {
   });
 
   return (
-    <Card>
-      <ExpenseFilter
-        selected={filteredYear}
-        onChangeFilter={changeFilterHandler}
-      />
-      {filteredExpenses.length === 0 &&
-        <p className="text-xl text-white">No expenses found !</p>}
-      
-        {filteredExpenses.length > 0 &&
-      
-        filteredExpenses.map((spendings) => (
-          <ExpenseItem
-            key={spendings.id}
-            title={spendings.title}
-            amount={spendings.amount}
-            date={spendings.date}
-          />
-        ))}
-    </Card>
+    <li>
+      <Card>
+        <ExpenseFilter
+          selected={filteredYear}
+          onChangeFilter={changeFilterHandler}
+        />
+        <ExpensesList spending={filteredExpenses} />
+      </Card>
+    </li>
   );
 };
 
