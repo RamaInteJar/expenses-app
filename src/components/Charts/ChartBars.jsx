@@ -7,14 +7,11 @@ const ChartBars = (props) => {
   }
   return (
     <div>
-      <div>
-        
+      <div className="h-32 w-5 bg-purple-900  rounded-lg ">
         <div style={{ height: barFillHeight }}></div>
-        
       </div>
 
       <div>{props.label}</div>
-
     </div>
   );
 };

@@ -80,7 +80,7 @@ const ExpenseForm = (props) => {
         <button
           type="button"
           onClick={props.onCancel}
-          className=" w-32 h-10 bg-purple-900 xl:ml-96 mr-10 rounded-xl "
+          className=" w-32 h-10 bg-purple-900 justify-between rounded-xl "
         >
           Cancel
         </button>

@@ -25,7 +25,7 @@ const NewExpenses = (props) => {
       <div className="mt-4 bg-purple-400 p-3 rounded-xl lg:w-3/5 w-full mx-auto flex items-center">
         {!editing && 
           <button
-            className=" w-40 h-16 bg-purple-900 xl:ml-96 rounded-xl"
+            className=" w-40 h-16 bg-purple-900 mx-auto rounded-xl"
             onClick={startEditingHandler}
           >
             Add New Expense
