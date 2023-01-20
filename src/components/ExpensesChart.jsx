@@ -21,7 +21,7 @@ const ExpensesChart = (props) => {
     chartDataPoints[expenseMonth].value += expense.amount;
   }
   return (
-    <div className="w-full h-50 rounded-lg bg-slate-600 ">
+    <div>
       <Charts dataPoints={chartDataPoints} />
     </div>
   );
